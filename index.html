@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculo do IMC</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+	<body>
+	<header>
+		<div class="container">
+			<h1>Meus Pacientes</h1>
+		</div>
+	</header>
+	<div id="interface">
+		<section>
+			<h2 id="meus-pacie">Meus Pacientes</h2>
+			<table>
+				</tr>
+					<th>Nome</th>
+					<th>Peso(Kg)</th>
+					<th>Altura</th>
+					<th>IMC</th>
+				</tr>
+				<tr class="paciente">
+					<td class="info-nome">Leonardo</td>
+					<td class="info-peso" id="peso-1">57</td>
+					<td class="info-altura" id="altura-1">1.67</td>
+					<td class="info-imc" id="imc-1"></td>
+				</tr>
+				<tr class="paciente">
+					<td class="info-nome">Paulo</td>
+					<td class="info-peso" id="peso-2">100</td>
+					<td class="info-altura" id="altura-2">2.00</td>
+					<td class="info-imc" id="imc-2"></td>
+				</tr>
+				<tr class="paciente">
+					<td class="info-nome">Stuart</td>
+					<td class="info-peso" id="peso-3">120</td>
+					<td class="info-altura" id="altura-3">1.80</td>
+					<td class="info-imc" id="imc-3"></td>
+			</table>
+			<button id="Calcular-imc" class="botao">Calcular IMC</button>
+		</section>
+		<section>
+			<h2 class="add-pacie">Adicionar novo paciente</h2>
+			<form>
+				<label for="name">Nome:</label>
+				<input id="campo-nome" type="text" placeholder="Digite o nome do paciente"/>
+				<div class="campo-medio">
+					<label for="peso">Peso:</label>  
+					<input id="campo-peso" type="text" placeholder="Digite o peso do paciente"/>
+				</div>
+				<div class="campo-medio">
+					<label for="altura">Altura:</label>
+					<input id="campo-altura" type="text" placeholder="Digite a altura do paciente"/>
+				</div>
+				<button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+			</form>
+		</section>
+		</div>
+		<script src="js/calculojs.js"></script> 
+	</body>
+</html>
