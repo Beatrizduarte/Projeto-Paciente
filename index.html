@@ -3,10 +3,12 @@
 <head>
 	<title>Calculo do IMC</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/mobile.css" media="(max-width: 320px)">
 </head>
 	<body>
-	<header>
+	<header class="container1">
 		<div class="container">
 			<h1>Meus Pacientes</h1>
 		</div>
@@ -23,23 +25,24 @@
 				</tr>
 				<tr class="paciente">
 					<td class="info-nome">Leonardo</td>
-					<td class="info-peso" id="peso-1">57</td>
-					<td class="info-altura" id="altura-1">1.67</td>
-					<td class="info-imc" id="imc-1"></td>
+					<td class="info-peso">57</td>
+					<td class="info-altura">1.67</td>
+					<td class="info-imc"></td>
 				</tr>
 				<tr class="paciente">
 					<td class="info-nome">Paulo</td>
-					<td class="info-peso" id="peso-2">100</td>
-					<td class="info-altura" id="altura-2">2.00</td>
-					<td class="info-imc" id="imc-2"></td>
+					<td class="info-peso">100</td>
+					<td class="info-altura">2.00</td>
+					<td class="info-imc"></td>
 				</tr>
 				<tr class="paciente">
 					<td class="info-nome">Stuart</td>
-					<td class="info-peso" id="peso-3">120</td>
-					<td class="info-altura" id="altura-3">1.80</td>
-					<td class="info-imc" id="imc-3"></td>
+					<td class="info-peso">120</td>
+					<td class="info-altura">1.80</td>
+					<td class="info-imc"></td>
+				</tr>
 			</table>
-			<button id="Calcular-imc" class="botao">Calcular IMC</button>
+			<button id="Calcular-imc"  class="botao">Calcular IMC</button>
 		</section>
 		<section>
 			<h2 class="add-pacie">Adicionar novo paciente</h2>
@@ -58,6 +61,9 @@
 			</form>
 		</section>
 		</div>
+		<script src="js/percorre.js"></script>
 		<script src="js/calculojs.js"></script> 
+		<script src="js/imprime-nome.js"></script>
+		<script src="js/adiciona.js"></script>
 	</body>
 </html>
