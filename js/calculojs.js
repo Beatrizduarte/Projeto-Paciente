@@ -1,4 +1,3 @@
-
 var botao = document.getElementById("Calcular-imc");
 botao.addEventListener("click",function(){
 
@@ -30,6 +29,37 @@ percorreArray(trsPacientes, function(pacienteTr){
 		tdImc.textContent = imc;
 
 		console.log(imc);
+		
+		$('.paciente').on("dblclick","td", function(){
+
+			$(this).remove();
+
+		})
+
 })
 
 });
+
+		function validar(){
+
+	var nome = document.formuser.Tnome.value;
+	var peso = document.formuser.Tpeso.value;
+	var altura = document.formuser.Taltura.value;
+
+	if(nome == ""){
+	
+		alert("Preencha o campo nome.");
+		document.formuser.nome.focus();
+		return false;
+	}
+	if(peso == ""){
+		alert("Preencha o campo Peso.");
+		document.formuser.peso.focus();
+		return false;
+	}
+	if(altura == ""){
+		alert("Preencha o campo altura.");
+		document.formuser.altura.focus();
+		return false;
+	}
+}
